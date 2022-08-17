@@ -32,6 +32,6 @@ int main()
     int ans1 = approach1(nums, n);
     int ans2 = approach2(nums, n);
 
-    cout << "The smallest element by approach 1 : " << ans1 << endl;
-    cout << "The smallest element by approach 2 : " << ans2 << endl;
+    cout << "The largest element by approach 1 : " << ans1 << endl;
+    cout << "The largest element by approach 2 : " << ans2 << endl;
 }
