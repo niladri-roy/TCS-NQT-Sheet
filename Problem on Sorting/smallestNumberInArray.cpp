@@ -8,7 +8,11 @@ int approach1(int nums[], int n)
 }
 int approach2(int nums[], int n)
 {
-    
+    int min_element = nums[0];
+    for(int i=0; i<n; i++){
+        min_element = min(min_element, nums[i]);
+    }
+    return min_element;
 }
 
 int main()
@@ -26,6 +30,6 @@ int main()
     int ans1 = approach1(nums, n);
     int ans2 = approach2(nums, n);
 
-    cout << "The smallest element by approach 1" << ans1;
-    cout << "The smallest element by approach 2" << ans2;
+    cout << "The smallest element by approach 1 : " << ans1 << endl;
+    cout << "The smallest element by approach 2 : " << ans2 << endl;
 }
