@@ -2,20 +2,29 @@
 using namespace std;
 
 void approach1(int nums[], int n)
-{
+{   
+    // This is only applicable when there is no repeating element in the array.
     sort(nums, nums + n);
     cout << "The second smallest number: " << nums[1] << endl;
     cout << "The second largest number: " << nums[(n-2)] << endl;
 }
 void approach2(int nums[], int n)
-{
-    int min_element = nums[0];
-    for (int i = 0; i < n; i++)
-    {
-        min_element = min(min_element, nums[i]);
+{   
+    int largest;
+    int smallest;
+    sort(nums, nums + n);{
+        largest = nums[(n-1)];
+        smallest = nums[0];
     }
-    cout << "The second smallest number: " << nums[1] << endl;
-    cout << "The second largest number: " << nums[(n - 2)] << endl;
+
+    int sec_largest;
+    int sec_smallest;
+
+    for(int i=0; i<n; i++){
+        if()
+    }
+    cout << "The second smallest number: " <<  << endl;
+    cout << "The second largest number: " <<  << endl;
 }
 void approach3(int nums[], int n)
 {
@@ -37,6 +46,6 @@ int main()
 
     approach1(nums, n);
     approach2(nums, n);
-    //approach3(nums, n);
+    approach3(nums, n);
 
 }
